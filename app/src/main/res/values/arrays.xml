@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="menu_type_array">
+
+		<item>Veg</item>
+		<item>Non Veg</item>
+		<item>Mixed</item>
+	</string-array>
+</resources>

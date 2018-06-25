@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:context="com.restaurant.mymenu.com.restaurant.demo.QRCodeScannerActivity"
+	tools:showIn="@layout/activity_qrcode_scanner">
+
+	<!-- Barcode Reader fragment -->
+	<fragment
+		android:id="@+id/barcode_fragment"
+		android:name="info.androidhive.barcode.BarcodeReader"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:auto_focus="true"
+		app:use_flash="false" />
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="16dp"
+		>
+		 <TextView
+			 android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"
+			 android:layout_marginTop="48dp"
+			 android:layout_gravity="center_horizontal"
+			 android:background="#44000000"
+			 android:textSize="18sp"
+			 android:text="@string/text_scan_tittle"
+			 android:textColor="@color/colorButtonText"
+			 />
+	</FrameLayout>
+	<!-- Scanner overlay animation -->
+	<info.androidhive.barcode.ScannerOverlay
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#44000000"
+		app:line_color="@color/colorButton"
+		app:line_speed="6"
+		app:line_width="4"
+		app:square_height="300"
+		app:square_width="300">
+
+	</info.androidhive.barcode.ScannerOverlay>
+</android.support.constraint.ConstraintLayout>
